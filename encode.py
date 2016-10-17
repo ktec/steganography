@@ -17,7 +17,7 @@ def run_script():
     parser.add_argument('src', help='source file')
     parser.add_argument('secret', help='secret file')
     parser.add_argument('out', help='output file name')
-    parser.add_argument('crop', default=False, help='If crop set then crop output image')
+    parser.add_argument('-c', '--crop', default='False', help='If crop set then crop output image')
     args = parser.parse_args()
 
     image = np.array(Image.open(args.src))
@@ -28,8 +28,8 @@ def run_script():
     width  = min(secret.shape[0], image.shape[0])
     height  = min(secret.shape[1], image.shape[1])
 
-    if args.crop:
-        out = out = image[:width, :height, :]
+    if args.crop <> 'False' :
+        out = image[:width, :height, :]
     else:
         out = image.copy()
 
