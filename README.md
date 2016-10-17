@@ -53,7 +53,7 @@ $ open ./secret.png
 ```
 
 
-Credits: I must thank David Banks (@davidbanks17), for most of the heavy lifting here, I just pointed and asked questions mostly.
+Credits: I must thank ![David Banks](https://github.com/davidbanks17), for most of the heavy lifting here, I just pointed and asked questions mostly.
 
 
 Further reading: 
