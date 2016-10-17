@@ -1,4 +1,11 @@
 #! /usr/bin/env python
+#
+#   Decode a black and white picture from a colour picture
+#   written by DM Banks	& K Salisbury
+#   13/10/2016 at the Southampton code dojo
+
+#   python decode.py output.bmp message.png
+#   ./decode.py output.bmp message.png
 
 import numpy as np
 import argparse
@@ -6,7 +13,7 @@ import os,sys
 from PIL import Image
 
 def run_script():
-    parser = argparse.ArgumentParser(description='Steganography.')
+    parser = argparse.ArgumentParser(description='Steganography decode file.')
     parser.add_argument('src', help='source file')
     parser.add_argument('out', help='output file name')
     args = parser.parse_args()
